@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="32" y="24" width="937" height="673" text="Browser&#xA;http://localhost:8080/openmrs/module/radiologyOrder.list" measuredWidth="937" measuredHeight="673">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:LinkBar" id="2" x="296" y="168" text="Home,Find/Create Patient,Reporting,Radiology,Administration" measuredWidth="407" measuredHeight="23">
+    <font/>
+    <items link="HomeScreen.screen" x="0" y="0" width="36" height="23" text="Home"/>
+    <items x="54" y="0" width="105" height="23" text="Find/Create Patient"/>
+    <items x="177" y="0" width="55" height="23" text="Reporting"/>
+    <items x="250" y="0" width="56" height="23" text="Radiology"/>
+    <items x="324" y="0" width="82" height="23" text="Administration"/>
+  </widgets>
+  <widgets xsi:type="model:Image" id="3" x="66" y="138" measuredWidth="77" measuredHeight="77" src="assets/images.jpg"/>
+  <widgets xsi:type="model:LinkBar" id="4" x="120" y="280" text="Admin,Manage Radiology Orders,Manage Radiology Reports,Manage Report Templates" measuredWidth="520" measuredHeight="23" selection="1">
+    <font/>
+    <items x="0" y="0" width="39" height="23" text="Admin"/>
+    <items x="57" y="0" width="140" height="23" text="Manage Radiology Orders"/>
+    <items link="ManageReports.screen" x="215" y="0" width="145" height="23" text="Manage Radiology Reports"/>
+    <items link="ManageTemplates.screen" x="378" y="0" width="141" height="23" text="Manage Report Templates"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="5" x="120" y="336" text="Manage Radiology Orders" measuredWidth="166" measuredHeight="25">
+    <font size="13px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="6" x="120" y="376" text="Add Radiology Order" measuredWidth="114" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Panel" id="7" x="104" y="432" width="833" height="241" measuredWidth="833" measuredHeight="241"/>
+  <widgets xsi:type="model:Label" id="8" x="137" y="458" text="Patient:" measuredWidth="46" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="9" x="188" y="458" width="137" text=" " measuredWidth="137" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="10" x="408" y="458" text="Start Date:" measuredWidth="60" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:DateField" id="11" x="467" y="458" text="  /  /  " measuredWidth="58" measuredHeight="23"/>
+  <widgets xsi:type="model:Label" id="12" x="592" y="464" text="End Date:" measuredWidth="56" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:DateField" id="13" x="656" y="464" text="  /  /  " measuredWidth="58" measuredHeight="23"/>
+  <widgets xsi:type="model:Button" id="14" x="776" y="463" text="Find" measuredWidth="43" measuredHeight="25">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:SearchField" id="15" x="592" y="527" width="194" text="Search" measuredWidth="194" measuredHeight="24">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="16" x="818" y="527" text="Search" measuredWidth="55" measuredHeight="25">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Combo" id="17" x="195" y="530" text="10" measuredWidth="39" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="18" x="137" y="530" text="Showing" measuredWidth="52" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="19" x="245" y="528" text="entries" measuredWidth="41" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Table" id="20" x="137" y="576" width="776" height="81" text="Patient ID,Full\nName,Priority, Order Start Date,Modality,Performed Status,Actions&#xA;100-X, John Doe, Routine,,X-Ray Angiography, completed,[claim report]&#xA;200-X, Jane Doe, Routine,,X-Ray Angiography,completed,[claim report]" measuredWidth="776" measuredHeight="81" alternative="#eeeeee">
+    <font/>
+    <items link="CreateReport.screen" x="674" y="39" width="64" height="15" text="claim report"/>
+    <items x="674" y="60" width="64" height="15" text="claim report"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

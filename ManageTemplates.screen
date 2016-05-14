@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="4" x="32" y="24" width="937" height="673" text="Browser&#xA;http://localhost:8080/openmrs/module/radiologyReport.list" measuredWidth="937" measuredHeight="673">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:LinkBar" id="5" x="296" y="168" text="Home,Find/Create Patient,Reporting,Radiology,Administration" measuredWidth="407" measuredHeight="23">
+    <font/>
+    <items link="HomeScreen.screen" x="0" y="0" width="36" height="23" text="Home"/>
+    <items x="54" y="0" width="105" height="23" text="Find/Create Patient"/>
+    <items x="177" y="0" width="55" height="23" text="Reporting"/>
+    <items x="250" y="0" width="56" height="23" text="Radiology"/>
+    <items x="324" y="0" width="82" height="23" text="Administration"/>
+  </widgets>
+  <widgets xsi:type="model:Image" id="6" x="66" y="138" measuredWidth="77" measuredHeight="77" src="assets/images.jpg"/>
+  <widgets xsi:type="model:LinkBar" id="7" x="120" y="280" text="Admin,Manage Radiology Orders,Manage Radiology Reports,Manage Report Templates" measuredWidth="520" measuredHeight="23" selection="3">
+    <font/>
+    <items x="0" y="0" width="39" height="23" text="Admin"/>
+    <items link="RadiologyScreen.screen" x="57" y="0" width="140" height="23" text="Manage Radiology Orders"/>
+    <items link="ManageReports.screen" x="215" y="0" width="145" height="23" text="Manage Radiology Reports"/>
+    <items x="378" y="0" width="141" height="23" text="Manage Report Templates"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="8" x="120" y="336" text="Manage Report Templates" measuredWidth="167" measuredHeight="25">
+    <font size="13px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="9" x="120" y="376" text="Create new template" measuredWidth="112" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Panel" id="10" x="104" y="432" width="833" height="241" measuredWidth="833" measuredHeight="241"/>
+  <widgets xsi:type="model:Label" id="11" x="137" y="447" text="Speciality:" measuredWidth="59" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="12" x="200" y="447" width="129" text=" " measuredWidth="129" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:SearchField" id="13" x="592" y="527" width="194" text="Search" measuredWidth="194" measuredHeight="24">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="14" x="818" y="527" text="Search" measuredWidth="55" measuredHeight="25">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Combo" id="15" x="195" y="541" text="10" measuredWidth="39" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="16" x="137" y="541" text="Showing" measuredWidth="52" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="17" x="246" y="541" text="entries" measuredWidth="41" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Table" id="18" x="137" y="576" width="776" height="81" text="Template ID,Template\nName,Speciality,Actions&#xA;1,[Template 1],X-Ray,[Use],{trash}&#xA;2,[Template 2],X-Ray,[Download],{trash}" measuredWidth="776" measuredHeight="81" alternative="#eeeeee">
+    <font/>
+    <items x="199" y="39" width="58" height="15" text="Template 1"/>
+    <items x="538" y="39" width="19" height="15" text="Use"/>
+    <items x="199" y="61" width="58" height="15" text="Template 2"/>
+    <items x="538" y="61" width="54" height="15" text="Download"/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="19" x="264" y="376" text="Upload new template" measuredWidth="116" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="20" x="368" y="447" text="Organisation:" measuredWidth="77" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="21" x="457" y="447" width="97" text=" " measuredWidth="97" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="23" x="608" y="446" text="Find" measuredWidth="43" measuredHeight="25">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="24" x="138" y="516" text="Include missing:" measuredWidth="92" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Checkbox" id="25" x="231" y="516" text=" " measuredWidth="24" measuredHeight="23" selected="true">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Tooltip" id="26" x="246" y="469" text="If checked will also include templates from radreport &#xD;&#xA;that are not&#xD;&#xA;yet installed in system and a provide a download option." measuredWidth="308" measuredHeight="70">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Tooltip" id="27" x="702" y="551" text="template currently&#xD;&#xA;installed and can be &#xD;&#xA;used to create reports" measuredWidth="125" measuredHeight="70">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

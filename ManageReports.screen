@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="4" x="32" y="24" width="937" height="673" text="Browser&#xA;http://localhost:8080/openmrs/module/radiologyReport.list" measuredWidth="937" measuredHeight="673">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:LinkBar" id="5" x="296" y="168" text="Home,Find/Create Patient,Reporting,Radiology,Administration" measuredWidth="407" measuredHeight="23">
+    <font/>
+    <items link="HomeScreen.screen" x="0" y="0" width="36" height="23" text="Home"/>
+    <items x="54" y="0" width="105" height="23" text="Find/Create Patient"/>
+    <items x="177" y="0" width="55" height="23" text="Reporting"/>
+    <items x="250" y="0" width="56" height="23" text="Radiology"/>
+    <items x="324" y="0" width="82" height="23" text="Administration"/>
+  </widgets>
+  <widgets xsi:type="model:Image" id="6" x="66" y="138" measuredWidth="77" measuredHeight="77" src="assets/images.jpg"/>
+  <widgets xsi:type="model:LinkBar" id="7" x="120" y="280" text="Admin,Manage Radiology Orders,Manage Radiology Reports,Manage Report Templates" measuredWidth="520" measuredHeight="23" selection="2">
+    <font/>
+    <items x="0" y="0" width="39" height="23" text="Admin"/>
+    <items link="RadiologyScreen.screen" x="57" y="0" width="140" height="23" text="Manage Radiology Orders"/>
+    <items x="215" y="0" width="145" height="23" text="Manage Radiology Reports"/>
+    <items link="ManageTemplates.screen" x="378" y="0" width="141" height="23" text="Manage Report Templates"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="8" x="120" y="336" text="Manage Radiology Reports" measuredWidth="172" measuredHeight="25">
+    <font size="13px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="9" x="120" y="376" text="Add Radiology Report" measuredWidth="119" measuredHeight="23" link="CreateReport.screen">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Panel" id="10" x="104" y="432" width="833" height="241" measuredWidth="833" measuredHeight="241"/>
+  <widgets xsi:type="model:Label" id="11" x="137" y="458" text="Patient:" measuredWidth="46" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="12" x="188" y="458" width="137" text=" " measuredWidth="137" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:SearchField" id="18" x="592" y="527" width="194" text="Search" measuredWidth="194" measuredHeight="24">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="19" x="818" y="527" text="Search" measuredWidth="55" measuredHeight="25">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Combo" id="20" x="195" y="530" text="10" measuredWidth="39" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="21" x="137" y="530" text="Showing" measuredWidth="52" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="22" x="245" y="528" text="entries" measuredWidth="41" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Table" id="23" x="137" y="576" width="776" height="81" text="Patient ID,Patient\nName,Provider\nName,Report Creation Date,Modality,Actions&#xA;100-X, John Doe, Doctor Anne,,X-Ray Angiography,[view report]&#xA;200-X, Jane Doe, Doctor Anne,,X-Ray Angiography,[view report]" measuredWidth="776" measuredHeight="81" alternative="#eeeeee">
+    <font/>
+    <items x="665" y="39" width="59" height="15" text="view report"/>
+    <items x="665" y="60" width="59" height="15" text="view report"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>
