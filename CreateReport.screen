@@ -1,67 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
-  <widgets xsi:type="model:Browser" id="4" x="32" y="24" width="937" height="673" text="Browser&#xA;http://localhost:8080/openmrs/module/createReport.page" measuredWidth="937" measuredHeight="673">
+  <widgets xsi:type="model:Browser" id="4" x="32" y="24" width="937" height="673" text="Browser&#xA;http://localhost:8080/openmrs/module/radiology/reports/radiologyReport.form?orderId=1" measuredWidth="937" measuredHeight="673">
     <font/>
   </widgets>
-  <widgets xsi:type="model:LinkBar" id="5" x="296" y="168" text="Home,Find/Create Patient,Reporting,Radiology,Administration" measuredWidth="407" measuredHeight="23">
-    <font/>
-    <items link="HomeScreen.screen" x="0" y="0" width="36" height="23" text="Home"/>
-    <items x="54" y="0" width="105" height="23" text="Find/Create Patient"/>
-    <items x="177" y="0" width="55" height="23" text="Reporting"/>
-    <items x="250" y="0" width="56" height="23" text="Radiology"/>
-    <items x="324" y="0" width="82" height="23" text="Administration"/>
-  </widgets>
-  <widgets xsi:type="model:Image" id="6" x="66" y="138" measuredWidth="77" measuredHeight="77" src="assets/images.jpg"/>
-  <widgets xsi:type="model:LinkBar" id="7" x="112" y="264" text="Admin,Manage Radiology Orders,Manage Radiology Reports,Manage Report Templates,Create Report" measuredWidth="613" measuredHeight="23" selection="4">
-    <font/>
-    <items x="0" y="0" width="39" height="23" text="Admin"/>
-    <items link="RadiologyScreen.screen" x="57" y="0" width="140" height="23" text="Manage Radiology Orders"/>
-    <items link="ManageReports.screen" x="215" y="0" width="145" height="23" text="Manage Radiology Reports"/>
-    <items link="ManageTemplates.screen" x="378" y="0" width="141" height="23" text="Manage Report Templates"/>
-    <items x="537" y="0" width="75" height="23" text="Create Report"/>
-  </widgets>
-  <widgets xsi:type="model:Panel" id="19" x="232" y="314" width="457" height="359" measuredWidth="457" measuredHeight="359"/>
-  <widgets xsi:type="model:Label" id="20" x="296" y="349" text="Patient:" measuredWidth="46" measuredHeight="23">
+  <widgets xsi:type="model:TabbedPane" id="38" x="51" y="193" width="889" height="488" text="Orders,Reports,Report Templates" measuredWidth="889" measuredHeight="488" selection="1">
+    <items link="ManageOrders.screen" x="10" y="0" width="60" height="30" text="Orders"/>
+    <items link="ManageReports.screen" x="70" y="0" width="64" height="30" text="Reports"/>
+    <items link="ManageTemplates.screen" x="134" y="0" width="120" height="30" text="Report Templates"/>
     <font/>
   </widgets>
-  <widgets xsi:type="model:TextField" id="21" x="432" y="344" width="153" text="Patient name or Id" measuredWidth="153" measuredHeight="23">
+  <widgets xsi:type="model:WidgetGroup" id="72" x="73" y="554" measuredWidth="250" measuredHeight="25">
+    <widgets xsi:type="model:Label" id="24" text="Template" measuredWidth="59" measuredHeight="25" annotation="true">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:TextField" id="25" x="114" width="136" text=" Tempate name or Id" measuredWidth="136" measuredHeight="25" annotation="true">
+      <font/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="73" x="76" y="587" measuredWidth="247" measuredHeight="25">
+    <widgets xsi:type="model:Label" id="26" text="Orderer" measuredWidth="51" measuredHeight="25">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:TextField" id="27" x="111" width="136" text=" Provider name or Id" measuredWidth="136" measuredHeight="25">
+      <font/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:Button" id="28" x="136" y="632" text="Create Report" measuredWidth="98" measuredHeight="27">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Label" id="22" x="296" y="408" text="Imaging Procedure: " measuredWidth="113" measuredHeight="23">
+  <widgets xsi:type="model:Label" id="29" x="302" y="456" text=" " measuredWidth="9" measuredHeight="25">
     <font/>
   </widgets>
-  <widgets xsi:type="model:TextField" id="23" x="432" y="400" width="153" text=" " measuredWidth="153" measuredHeight="23">
+  <widgets xsi:type="model:Tooltip" id="33" x="352" y="578" text="Click on Create report will open&#xD;&#xA;a report authoring editor that makes&#xD;&#xA;use of the selected template" measuredWidth="214" measuredHeight="76">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Label" id="24" x="296" y="512" text="Template:" measuredWidth="58" measuredHeight="23">
-    <font/>
+  <widgets xsi:type="model:WidgetGroup" id="34" x="42" y="86" measuredWidth="649" measuredHeight="77">
+    <widgets xsi:type="model:LinkBar" id="35" x="230" text="Home,Find/Create Patient,Reporting,Radiology,Administration" measuredWidth="419" measuredHeight="25" selection="3">
+      <font/>
+      <items link="HomeScreen.screen" x="0" y="0" width="37" height="25" text="Home"/>
+      <items x="55" y="0" width="110" height="25" text="Find/Create Patient"/>
+      <items x="183" y="0" width="57" height="25" text="Reporting"/>
+      <items x="258" y="0" width="57" height="25" text="Radiology"/>
+      <items x="333" y="0" width="85" height="25" text="Administration"/>
+    </widgets>
+    <widgets xsi:type="model:Image" id="36" measuredWidth="77" measuredHeight="77" src="assets/images.jpg"/>
   </widgets>
-  <widgets xsi:type="model:TextField" id="25" x="432" y="512" width="153" text=" Tempate name or Id" measuredWidth="153" measuredHeight="23">
+  <widgets xsi:type="model:LinkBar" id="39" x="72" y="234" text="Manage Radiology Reports,Add Radiology Report" measuredWidth="293" measuredHeight="25" selection="1">
     <font/>
+    <items link="ManageOrders.screen" x="0" y="0" width="152" height="25" text="Manage Radiology Reports"/>
+    <items x="170" y="0" width="122" height="25" text="Add Radiology Report"/>
   </widgets>
-  <widgets xsi:type="model:Label" id="26" x="296" y="560" text="Orderer:" measuredWidth="49" measuredHeight="23">
-    <font/>
+  <widgets xsi:type="model:WidgetGroup" id="40" x="72" y="267" measuredWidth="251" measuredHeight="25">
+    <widgets xsi:type="model:Label" id="41" text="Patient" measuredWidth="45" measuredHeight="25">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:TextField" id="42" x="114" width="137" text="John Doe" measuredWidth="137" measuredHeight="25">
+      <font/>
+    </widgets>
   </widgets>
-  <widgets xsi:type="model:TextField" id="27" x="432" y="560" width="153" text=" Provider name or Id" measuredWidth="153" measuredHeight="23">
-    <font/>
+  <widgets xsi:type="model:WidgetGroup" id="43" x="72" y="359" measuredWidth="251" measuredHeight="25">
+    <widgets xsi:type="model:Label" id="44" text="Scheduled Date" measuredWidth="94" measuredHeight="25">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:DateField" id="45" x="114" width="137" text="2016/05/26" measuredWidth="137" measuredHeight="25"/>
   </widgets>
-  <widgets xsi:type="model:Button" id="28" x="296" y="624" text="Create Report" measuredWidth="92" measuredHeight="25">
-    <font/>
+  <widgets xsi:type="model:WidgetGroup" id="46" x="72" y="297" measuredWidth="251" measuredHeight="25">
+    <widgets xsi:type="model:TextField" id="47" x="114" width="137" text="X-Ray Chest" measuredWidth="137" measuredHeight="25">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="48" text="Imaging Procedure" measuredWidth="113" measuredHeight="25">
+      <font/>
+    </widgets>
   </widgets>
-  <widgets xsi:type="model:Label" id="29" x="302" y="456" text=" " measuredWidth="9" measuredHeight="23">
-    <font/>
+  <widgets xsi:type="model:WidgetGroup" id="49" x="72" y="489" measuredWidth="251" measuredHeight="25">
+    <widgets xsi:type="model:TextField" id="50" x="114" width="137" text="Some" measuredWidth="137" measuredHeight="25">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="51" text="Instructions" measuredWidth="72" measuredHeight="25">
+      <font/>
+    </widgets>
   </widgets>
-  <widgets xsi:type="model:Label" id="30" x="296" y="464" text="Modality:" measuredWidth="56" measuredHeight="23">
-    <font/>
+  <widgets xsi:type="model:WidgetGroup" id="52" x="72" y="520" measuredWidth="251" measuredHeight="25">
+    <widgets xsi:type="model:TextField" id="53" x="114" width="137" text="Doctor Anne" measuredWidth="137" measuredHeight="25">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="54" text="Orderer" measuredWidth="51" measuredHeight="25">
+      <font/>
+    </widgets>
   </widgets>
-  <widgets xsi:type="model:TextField" id="31" x="432" y="456" width="153" text=" " measuredWidth="153" measuredHeight="23">
-    <font/>
+  <widgets xsi:type="model:WidgetGroup" id="55" x="72" y="327" measuredWidth="251" measuredHeight="25">
+    <widgets xsi:type="model:Label" id="56" text="Urgency" measuredWidth="53" measuredHeight="25">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:TextField" id="57" x="114" width="137" text="Routine" measuredWidth="137" measuredHeight="25">
+      <font/>
+    </widgets>
   </widgets>
-  <widgets xsi:type="model:Tooltip" id="32" x="678" y="286" text="If patient got here by clicking on an&#xD;&#xA;order, then most of the information here&#xD;&#xA;like patient name, modality and orderer will &#xD;&#xA;already be filled.&#xD;&#xA;The template name or Id can be gotten from &#xD;&#xA;the mange templates sections" measuredWidth="249" measuredHeight="115">
-    <font/>
+  <widgets xsi:type="model:WidgetGroup" id="58" x="72" y="392" measuredWidth="251" measuredHeight="25">
+    <widgets xsi:type="model:WidgetGroup" id="59" measuredWidth="101" measuredHeight="25">
+      <widgets xsi:type="model:Label" id="60" text="Scheduled status" measuredWidth="101" measuredHeight="25">
+        <font/>
+      </widgets>
+    </widgets>
+    <widgets xsi:type="model:TextField" id="61" x="114" width="137" text="Scheduled" measuredWidth="137" measuredHeight="25">
+      <font/>
+    </widgets>
   </widgets>
-  <widgets xsi:type="model:Tooltip" id="33" x="368" y="576" text="Click on Create report will open&#xD;&#xA;a report authoring editor that makes&#xD;&#xA;use of the selected template" measuredWidth="202" measuredHeight="70">
-    <font/>
+  <widgets xsi:type="model:WidgetGroup" id="62" x="72" y="424" measuredWidth="251" measuredHeight="25">
+    <widgets xsi:type="model:WidgetGroup" id="63" measuredWidth="103" measuredHeight="25">
+      <widgets xsi:type="model:Label" id="64" text="Performed status" measuredWidth="103" measuredHeight="25">
+        <font/>
+      </widgets>
+    </widgets>
+    <widgets xsi:type="model:TextField" id="65" x="114" width="137" text="Completed" measuredWidth="137" measuredHeight="25">
+      <font/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="66" x="72" y="456" measuredWidth="251" measuredHeight="25">
+    <widgets xsi:type="model:WidgetGroup" id="67" measuredWidth="54" measuredHeight="25">
+      <widgets xsi:type="model:Label" id="68" text="Modality" measuredWidth="54" measuredHeight="25">
+        <font/>
+      </widgets>
+    </widgets>
+    <widgets xsi:type="model:TextField" id="69" x="114" width="137" text="X-Ray Angiography" measuredWidth="137" measuredHeight="25">
+      <font/>
+    </widgets>
   </widgets>
   <hRuler/>
   <vRuler/>

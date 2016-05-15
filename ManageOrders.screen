@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:WidgetGroup" id="39" x="32" y="24" measuredWidth="937" measuredHeight="505">
+    <widgets xsi:type="model:Browser" id="1" width="937" height="505" text="Browser&#xA;http://localhost:8080/openmrs/module/radiology/orders/radiologyOrder.list" measuredWidth="937" measuredHeight="505">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:WidgetGroup" id="36" x="10" y="62" measuredWidth="649" measuredHeight="77">
+      <widgets xsi:type="model:LinkBar" id="37" x="230" text="Home,Find/Create Patient,Reporting,Radiology,Administration" measuredWidth="419" measuredHeight="25" selection="3">
+        <font/>
+        <items link="HomeScreen.screen" x="0" y="0" width="37" height="25" text="Home"/>
+        <items x="55" y="0" width="110" height="25" text="Find/Create Patient"/>
+        <items x="183" y="0" width="57" height="25" text="Reporting"/>
+        <items x="258" y="0" width="57" height="25" text="Radiology"/>
+        <items x="333" y="0" width="85" height="25" text="Administration"/>
+      </widgets>
+      <widgets xsi:type="model:Image" id="38" measuredWidth="77" measuredHeight="77" src="assets/images.jpg"/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:TabbedPane" id="21" x="51" y="193" width="889" height="321" text="Orders,Reports,Report Templates" measuredWidth="889" measuredHeight="321" selection="0">
+    <items link="" x="10" y="0" width="60" height="30" text="Orders"/>
+    <items link="ManageReports.screen" x="70" y="0" width="64" height="30" text="Reports"/>
+    <items link="ManageTemplates.screen" x="134" y="0" width="120" height="30" text="Report Templates"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="35" x="84" y="287" measuredWidth="618" measuredHeight="27">
+    <widgets xsi:type="model:Label" id="8" y="1" text="Patient:" measuredWidth="48" measuredHeight="25">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:TextField" id="9" x="51" y="1" width="137" text=" " measuredWidth="137" measuredHeight="25">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="10" x="265" y="1" text="Start Date:" measuredWidth="66" measuredHeight="25">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:DateField" id="11" x="330" y="1" text="  /  /  " measuredWidth="56" measuredHeight="25"/>
+    <widgets xsi:type="model:Label" id="12" x="425" y="1" text="End Date:" measuredWidth="60" measuredHeight="25">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:DateField" id="13" x="492" y="1" text="  /  /  " measuredWidth="56" measuredHeight="25"/>
+    <widgets xsi:type="model:Button" id="14" x="575" text="Find" measuredWidth="43" measuredHeight="27">
+      <font/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="34" x="81" y="373" measuredWidth="776" measuredHeight="125">
+    <widgets xsi:type="model:SearchField" id="15" x="578" width="194" text="Search" measuredWidth="194" measuredHeight="25">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Combo" id="17" x="61" y="3" text="10" measuredWidth="41" measuredHeight="25">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="18" x="3" y="3" text="Showing" measuredWidth="53" measuredHeight="25">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="19" x="111" y="1" text="entries" measuredWidth="45" measuredHeight="25">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Table" id="20" y="35" width="776" text=",Edit,Patient ID,Full\nName,Priority, Order Start Date,Modality,Performed Status,Actions&#xA;+,[1],100-X, John Doe, Routine,,X-Ray Angiography, completed,[claim report]&#xA;+,[2],200-X, Jane Doe, Routine,,X-Ray Angiography,completed,[claim report]" measuredWidth="776" measuredHeight="90" alternative="#eeeeee">
+      <font/>
+      <items link="ExistingOrder.screen" x="26" y="43" width="7" height="17" text="1"/>
+      <items link="CreateReport.screen" x="681" y="43" width="68" height="17" text="claim report"/>
+      <items x="26" y="66" width="7" height="17" text="2"/>
+      <items x="681" y="66" width="68" height="17" text="claim report"/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:LinkBar" id="22" x="72" y="234" text="Manage Radiology Orders,Add Radiology Order" measuredWidth="285" measuredHeight="25" selection="0">
+    <font/>
+    <items x="0" y="0" width="148" height="25" text="Manage Radiology Orders"/>
+    <items link="CreateOrder.screen" x="166" y="0" width="118" height="25" text="Add Radiology Order"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

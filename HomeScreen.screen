@@ -1,20 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
-  <widgets xsi:type="model:Browser" id="1" x="32" y="32" width="953" height="665" text="Browser&#xA;http://localhost:8080/openmrs/index.htm" measuredWidth="953" measuredHeight="665">
-    <font size="13px"/>
-  </widgets>
-  <widgets xsi:type="model:LinkBar" id="2" x="288" y="176" text="Home,Find/Create Patient,Reporting,Radiology,Administration" measuredWidth="407" measuredHeight="23">
-    <font/>
-    <items x="0" y="0" width="36" height="23" text="Home"/>
-    <items x="54" y="0" width="105" height="23" text="Find/Create Patient"/>
-    <items x="177" y="0" width="55" height="23" text="Reporting"/>
-    <items link="RadiologyScreen.screen" x="250" y="0" width="56" height="23" text="Radiology"/>
-    <items x="324" y="0" width="82" height="23" text="Administration"/>
-  </widgets>
-  <widgets xsi:type="model:Image" id="3" x="58" y="146" measuredWidth="77" measuredHeight="77" src="assets/images.jpg"/>
-  <widgets xsi:type="model:Image" id="4" x="232" y="240" measuredWidth="500" measuredHeight="182" src="assets/OpenMRS_2008_logo_web.jpg"/>
-  <widgets xsi:type="model:Label" id="5" x="352" y="421" text="Hello, super user welcome to OpenMRS" measuredWidth="239" measuredHeight="25">
-    <font size="13px"/>
+  <widgets xsi:type="model:WidgetGroup" id="10" x="32" y="-144" measuredWidth="953" measuredHeight="489">
+    <widgets xsi:type="model:WidgetGroup" id="9" measuredWidth="953" measuredHeight="489">
+      <widgets xsi:type="model:Browser" id="1" width="953" height="489" text="Browser&#xA;http://localhost:8080/openmrs/index.htm" measuredWidth="953" measuredHeight="489">
+        <font size="13px"/>
+      </widgets>
+      <widgets xsi:type="model:WidgetGroup" id="8" x="26" y="69" measuredWidth="649" measuredHeight="77">
+        <widgets xsi:type="model:LinkBar" id="2" x="230" text="Home,Find/Create Patient,Reporting,Radiology,Administration" measuredWidth="419" measuredHeight="25" selection="0">
+          <font/>
+          <items x="0" y="0" width="37" height="25" text="Home"/>
+          <items x="55" y="0" width="110" height="25" text="Find/Create Patient"/>
+          <items x="183" y="0" width="57" height="25" text="Reporting"/>
+          <items link="ManageOrders.screen" x="258" y="0" width="57" height="25" text="Radiology"/>
+          <items x="333" y="0" width="85" height="25" text="Administration"/>
+        </widgets>
+        <widgets xsi:type="model:Image" id="3" measuredWidth="77" measuredHeight="77" src="assets/images.jpg"/>
+      </widgets>
+    </widgets>
+    <widgets xsi:type="model:WidgetGroup" id="6" x="211" y="188" measuredWidth="500" measuredHeight="208">
+      <widgets xsi:type="model:Image" id="4" measuredWidth="500" measuredHeight="182" src="assets/OpenMRS_2008_logo_web.jpg"/>
+      <widgets xsi:type="model:Label" id="5" x="125" y="181" text="Hello, super user welcome to OpenMRS" measuredWidth="250" measuredHeight="27">
+        <font size="13px"/>
+      </widgets>
+    </widgets>
   </widgets>
   <hRuler/>
   <vRuler/>

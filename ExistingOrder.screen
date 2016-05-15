@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:WidgetGroup" id="74" x="32" y="24" measuredWidth="937" measuredHeight="585">
+    <widgets xsi:type="model:Browser" id="1" width="937" height="585" text="Browser&#xA;http://localhost:8080/openmrs/module/radiology/orders/radiologyOrder.form?orderId=1" measuredWidth="937" measuredHeight="585">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:WidgetGroup" id="71" x="10" y="62" measuredWidth="649" measuredHeight="77">
+      <widgets xsi:type="model:LinkBar" id="72" x="230" text="Home,Find/Create Patient,Reporting,Radiology,Administration" measuredWidth="419" measuredHeight="25" selection="3">
+        <font/>
+        <items link="HomeScreen.screen" x="0" y="0" width="37" height="25" text="Home"/>
+        <items x="55" y="0" width="110" height="25" text="Find/Create Patient"/>
+        <items x="183" y="0" width="57" height="25" text="Reporting"/>
+        <items x="258" y="0" width="57" height="25" text="Radiology"/>
+        <items x="333" y="0" width="85" height="25" text="Administration"/>
+      </widgets>
+      <widgets xsi:type="model:Image" id="73" measuredWidth="77" measuredHeight="77" src="assets/images.jpg"/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:TabbedPane" id="21" x="51" y="193" width="889" height="408" text="Orders,Reports,Report Templates" measuredWidth="889" measuredHeight="408" selection="0">
+    <items x="10" y="0" width="60" height="30" text="Orders"/>
+    <items link="ManageReports.screen" x="70" y="0" width="64" height="30" text="Reports"/>
+    <items link="ManageTemplates.screen" x="134" y="0" width="120" height="30" text="Report Templates"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="52" x="80" y="274" measuredWidth="251" measuredHeight="25">
+    <widgets xsi:type="model:Label" id="8" text="Patient" measuredWidth="45" measuredHeight="25">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:TextField" id="9" x="114" width="137" text="John Doe" measuredWidth="137" measuredHeight="25">
+      <font/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="55" x="80" y="366" measuredWidth="251" measuredHeight="25">
+    <widgets xsi:type="model:Label" id="10" text="Scheduled Date" measuredWidth="94" measuredHeight="25">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:DateField" id="11" x="114" width="137" text="2016/05/26" measuredWidth="137" measuredHeight="25"/>
+  </widgets>
+  <widgets xsi:type="model:LinkBar" id="22" x="72" y="234" text="Manage Radiology Orders,Add Radiology Order" measuredWidth="285" measuredHeight="25">
+    <font/>
+    <items link="ManageOrders.screen" x="0" y="0" width="148" height="25" text="Manage Radiology Orders"/>
+    <items link="CreateOrder.screen" x="166" y="0" width="118" height="25" text="Add Radiology Order"/>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="53" x="80" y="304" measuredWidth="251" measuredHeight="25">
+    <widgets xsi:type="model:TextField" id="36" x="114" width="137" text="X-Ray Chest" measuredWidth="137" measuredHeight="25">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="37" text="Imaging Procedure" measuredWidth="113" measuredHeight="25">
+      <font/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="59" x="80" y="496" measuredWidth="251" measuredHeight="25">
+    <widgets xsi:type="model:TextField" id="47" x="114" width="137" text="Some" measuredWidth="137" measuredHeight="25">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="48" text="Instructions" measuredWidth="72" measuredHeight="25">
+      <font/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="60" x="80" y="527" measuredWidth="251" measuredHeight="25">
+    <widgets xsi:type="model:TextField" id="49" x="114" width="137" text="Doctor Anne" measuredWidth="137" measuredHeight="25">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="50" text="Orderer" measuredWidth="51" measuredHeight="25">
+      <font/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="65" x="80" y="334" measuredWidth="251" measuredHeight="25">
+    <widgets xsi:type="model:Label" id="39" text="Urgency" measuredWidth="53" measuredHeight="25">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:TextField" id="62" x="114" width="137" text="Routine" measuredWidth="137" measuredHeight="25">
+      <font/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="64" x="80" y="399" measuredWidth="251" measuredHeight="25">
+    <widgets xsi:type="model:WidgetGroup" id="56" measuredWidth="101" measuredHeight="25">
+      <widgets xsi:type="model:Label" id="42" text="Scheduled status" measuredWidth="101" measuredHeight="25">
+        <font/>
+      </widgets>
+    </widgets>
+    <widgets xsi:type="model:TextField" id="63" x="114" width="137" text="Scheduled" measuredWidth="137" measuredHeight="25">
+      <font/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="68" x="80" y="431" measuredWidth="251" measuredHeight="25">
+    <widgets xsi:type="model:WidgetGroup" id="57" measuredWidth="103" measuredHeight="25">
+      <widgets xsi:type="model:Label" id="44" text="Performed status" measuredWidth="103" measuredHeight="25">
+        <font/>
+      </widgets>
+    </widgets>
+    <widgets xsi:type="model:TextField" id="67" x="114" width="137" text="Completed" measuredWidth="137" measuredHeight="25">
+      <font/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="70" x="80" y="463" measuredWidth="251" measuredHeight="25">
+    <widgets xsi:type="model:WidgetGroup" id="58" measuredWidth="54" measuredHeight="25">
+      <widgets xsi:type="model:Label" id="46" text="Modality" measuredWidth="54" measuredHeight="25">
+        <font/>
+      </widgets>
+    </widgets>
+    <widgets xsi:type="model:TextField" id="69" x="114" width="137" text="X-Ray Angiography" measuredWidth="137" measuredHeight="25">
+      <font/>
+    </widgets>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>
